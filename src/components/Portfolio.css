@@ -1,0 +1,91 @@
+.portfolio-section {
+    background-color: rgba(24, 25, 27, 0.91);
+    color: white;
+    padding: 300px;
+    margin: 0 auto;
+}
+
+.portfolio-section h2 {
+    color: #58a6ff;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Grid düzeni */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Kart tasarımı */
+.portfolio-card {
+    background-color: #161b22;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(88, 166, 255, 0.6);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    padding: 1.5rem;
+}
+
+.portfolio-info h3 {
+    margin-bottom: 0.8rem;
+    color: #58a6ff;
+}
+
+.portfolio-info p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 1.2rem;
+}
+
+.btn-portfolio {
+    display: inline-block;
+    background-color: #58a6ff;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-portfolio:hover {
+    background-color: #1f6feb;
+}
+
+/* Fade animasyonu */
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .portfolio-card img {
+        height: 140px;
+    }
+}
