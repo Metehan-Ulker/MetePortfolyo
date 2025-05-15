@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mobil Uyumlu Site</title>
+    <style>
+        /* Temel sıfırlamalar */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background: #0056b3;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 1rem;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        footer {
+            background: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* Mobil uyumlu için media query */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Benim Mobil Uyumlu Sitem</h1>
+</header>
+
+<nav>
+    <a href="#anasayfa">Anasayfa</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#iletisim">İletişim</a>
+</nav>
+
+<main>
+    <section id="anasayfa">
+        <h2>Anasayfa</h2>
+        <p>Burada sitenin ana içeriği yer alır. Mobil ve masaüstü cihazlarda uyumludur.</p>
+    </section>
+
+    <section id="hakkimizda">
+        <h2>Hakkımızda</h2>
+        <p>Biz kaliteli ve hızlı çözümler sunan bir ekibiz.</p>
+    </section>
+
+    <section id="iletisim">
+        <h2>İletişim</h2>
+        <form id="contactForm">
+            <label for="name">Adınız:</label><br/>
+            <input type="text" id="name" name="name" required /><br/><br/>
+
+            <label for="email">E-posta:</label><br/>
+            <input type="email" id="email" name="email" required /><br/><br/>
+
+            <label for="message">Mesajınız:</label><br/>
+            <textarea id="message" name="message" rows="4" required></textarea><br/><br/>
+
+            <button type="submit">Gönder</button>
+        </form>
+        <p id="formResult" style="color: green; margin-top: 1rem;"></p>
+    </section>
+</main>
+
+<footer>
+    &copy; 2025 Benim Web Sitem
+</footer>
+
+<script>
+    // Basit form gönderme simülasyonu (örneğin AJAX entegrasyonu yapılabilir)
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('formResult').textContent = "Mesajınız alındı, teşekkürler!";
+        this.reset();
+    });
+</script>
+
+</body>
+</html>

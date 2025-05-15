@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import SocialLinks from "./components/SocialLinks";
 import Footer from "./components/Footer";
+
 import './styles/animations.css';
 
 const pageVariants = {
