@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -31,13 +31,6 @@ export default function App() {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
                 minHeight: '100vh' }}>
-                 <motion.div
-                    initial="initial"
-                    animate="in"
-                    exit="out"
-                    variants={pageVariants}
-                    transition={pageTransition}
-                 >
                     <Home />
                     <About />
                     <Skills />
@@ -45,7 +38,7 @@ export default function App() {
                     <Contact />
                     <SocialLinks />
                     <Footer/>
-                 </motion.div>
+
             </main>
         </>
     );
