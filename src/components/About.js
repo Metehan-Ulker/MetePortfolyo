@@ -13,7 +13,7 @@ export default function About() {
                     <p>
                         Merhaba! Ben Metehan. 25 Haziran 2003 tarihinde Aydında doğdum. Balıkesir Bilgisayar Mühendisliği
                         2.Sınıf Öğrencisiyim. Bilgisayarlara Teknolojiye ve Oyunlara ilgiliyim. Amacım Tecrübe edindiğim
-                        ve edineceğim bilgileri günlük hayatta karşılaşabileceğim sorunlara karşı çözümler üretebilmek ve bu yolda kendimi
+                        ve edineceğim bilgileri günlük hayatta karşılaşabileceğim sorunlara karşı çözümler üretirken kullanmak ve bu yolda kendimi
                         hep geliştirmek istiyorum.
                     </p>
 
