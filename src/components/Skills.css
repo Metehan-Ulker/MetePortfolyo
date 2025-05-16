@@ -49,3 +49,33 @@
     font-weight: 600;
     color: #cdd9e5;
 }
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 150px 20px;
+    }
+
+    .skills-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .skills-list {
+        gap: 1.5rem;
+    }
+
+    .skill-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .skill-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill-name {
+        font-size: 1.2rem;
+    }
+}
+

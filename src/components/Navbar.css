@@ -1,12 +1,11 @@
 .navbar {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 0px;
+    right: 0px;
+    width: 100%;
     z-index: 1000;
     background: rgba(13, 17, 23, 0.85); /* Hafif şeffaf koyu zemin */
     padding: 10px 20px;
-    border-radius: 12px;
-    border-top: none;
     box-shadow: none;
     backdrop-filter: blur(8px); /* Şık arka plan bulanıklığı efekti */
 }
@@ -54,19 +53,37 @@
     width: 100%;
 }
 
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* EKRAN 768px'den küçükse mobil stil uygula */
 @media screen and (max-width: 768px) {
-    .navbar {
-        right: 10px;
-        left: 10px;
-        text-align: center;
+    .hamburger {
+        display: block;
     }
 
     .navbar-menu {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: none; /* Küçük ekranda gizle */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #111;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .navbar-menu.open {
+        display: flex; /* Menü açıldığında göster */
     }
 
     .navbar-menu li {
-        font-size: 0.95rem;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #333;
     }
 }

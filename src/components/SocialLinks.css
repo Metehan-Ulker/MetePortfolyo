@@ -42,3 +42,46 @@
     font-size: 1.1rem;
     color: #cdd9e5;
 }
+@media (max-width: 768px) {
+    #social {
+        padding: 100px 20px;
+        margin: 4rem auto;
+    }
+
+    #social h2 {
+        font-size: 2rem;
+    }
+
+    #social ul {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    #social a {
+        font-size: 3.5rem;
+    }
+
+    #social a span {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #social h2 {
+        font-size: 1.8rem;
+    }
+
+    #social ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #social a {
+        font-size: 3rem;
+    }
+
+    #social a span {
+        font-size: 0.95rem;
+    }
+}
+
