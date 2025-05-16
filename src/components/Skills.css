@@ -7,7 +7,9 @@
 }
 
 .skills-section h2 {
-    color: #58a6ff;
+    color: #9894f6;
+    text-decoration:underline;
+    text-decoration-color: #dcd215;
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -47,7 +49,7 @@
 .skill-name {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #cdd9e5;
+    color: #0490a3;
 }
 @media (max-width: 768px) {
     .skills-section {

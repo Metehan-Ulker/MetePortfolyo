@@ -66,7 +66,7 @@ export default function SocialLinks() {
 
             }}
         >
-            <h2 style={{ color: '#61dafb', fontSize: '2.4rem', marginBottom: '1rem' }}>
+            <h2 style={{ color: '#6e5fa5', fontSize: '2.4rem', marginBottom: '1rem' ,textDecoration:"underline"}}>
                 Sosyal Medya Bağlantıları
             </h2>
             <ul

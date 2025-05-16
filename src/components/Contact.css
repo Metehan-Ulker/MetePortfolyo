@@ -19,10 +19,15 @@
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(88, 166, 255, 0.5);
 }
+.contact-container:hover{
+    box-shadow: 0 10px 30px rgba(233, 253, 0, 0.96);
+}
 
 .contact-container h2 {
     font-size: 2.5rem;
-    color: #58a6ff;
+    color: #9894f6;
+    text-decoration:underline;
+    text-decoration-color: #dcd215;
     margin-bottom: 1.5rem;
     text-align: center;
 }
