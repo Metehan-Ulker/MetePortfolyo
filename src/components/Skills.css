@@ -1,17 +1,16 @@
 .skills-section {
     background-color: rgba(24, 25, 27, 0.91);
     color: #e1e4e8;
-    padding: 4rem 4rem;
+    padding: 220px 4rem;
     margin: 0 auto;
-    padding: 300px;
 }
 
 .skills-section h2 {
     color: #9894f6;
-    text-decoration:underline;
-    text-decoration-color: #dcd215;
+    text-decoration: underline;
+    text-decoration-color: #f4f105;
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     text-align: center;
 }
 
@@ -31,13 +30,9 @@
     gap: 1rem;
     box-shadow: 0 0 8px rgba(255, 244, 0, 0.87);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: default;
+    cursor: pointer;
 }
 
-.skill-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(88, 166, 255, 0.6);
-}
 
 .skill-icon {
     width: 80px;
@@ -49,8 +44,9 @@
 .skill-name {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #0490a3;
+    color: #f8d806; /* biraz daha açık */
 }
+
 @media (max-width: 768px) {
     .skills-section {
         padding: 150px 20px;
@@ -80,4 +76,3 @@
         font-size: 1.2rem;
     }
 }
-

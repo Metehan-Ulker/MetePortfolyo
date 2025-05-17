@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import "./Contact.css";
 
 export default function Contact() {
@@ -18,11 +19,62 @@ export default function Contact() {
         setFormData({ name: "", email: "", message: "" });
     };
 
+    // Başlık varyantı
+    const headerVariants = {
+        initial: { x: "-100%", opacity: 0, scale: 0.8, color: "#222" },
+        animate: {
+            x: "0%",
+            opacity: 1,
+            scale: 1.1,
+            color: "#007bff",
+            transition: {
+                duration: 1,
+                ease: "easeOut",
+                yoyo: Infinity,
+                repeatDelay: 2,
+            },
+        },
+    };
+
+    // Form alanları varyantı
+    const formVariants = {
+        initial: { opacity: 0, y: 50, scale: 0.9 },
+        animate: {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            transition: { duration: 0.7, ease: "easeOut" },
+        },
+    };
+
     return (
         <section className="contact-section" id="contact">
-            <div className="contact-container fade-up">
-                <h2>İletişim</h2>
-                <form onSubmit={handleSubmit} className="contact-form">
+            <div className="contact-container">
+                <motion.h2
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: false, amount: 0.7 }}
+                    variants={headerVariants}
+                    style={{
+                        fontWeight: "900",
+                        fontSize: "3.5rem",
+                        overflow: "hidden",
+                        whiteSpace: "nowrap",
+                        marginBottom: "2rem",
+
+                    }}
+                >
+                    İLETİŞİM
+                </motion.h2>
+
+                <motion.form
+                    onSubmit={handleSubmit}
+                    className="contact-form"
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{ once: false, amount: 0.5 }}
+                    variants={formVariants}
+                >
                     <label htmlFor="name">Ad Soyad</label>
                     <input
                         type="text"
@@ -59,7 +111,7 @@ export default function Contact() {
                     <button type="submit" className="btn-submit">
                         Gönder
                     </button>
-                </form>
+                </motion.form>
             </div>
         </section>
     );

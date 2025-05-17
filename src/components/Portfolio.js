@@ -1,3 +1,5 @@
+import React from "react";
+import { motion } from "framer-motion";
 import "./Portfolio.css";
 
 const projects = [
@@ -5,8 +7,8 @@ const projects = [
         id: 1,
         title: "Yemek Sipariş Uygulaması",
         description: "Python ve SQLite veri tabanı kullanarak tasarladığım yemek sipariş uygulaması.",
-        imageUrl: "/yemeksipariş.jpg", // public klasörüne koy
-        link: "https://github.com/Metehan-Ulker/YemekSiparisUygulamasi" // <- Örnek link
+        imageUrl: "/yemeksipariş.jpg",
+        link: "https://github.com/Metehan-Ulker/YemekSiparisUygulamasi"
     },
     {
         id: 2,
@@ -24,28 +26,61 @@ const projects = [
     },
 ];
 
+const variants = {
+    0: {
+        initial: { opacity: 0, scale: 0.8 },
+        animate: { opacity: 1, scale: 1 }
+    },
+    1: {
+        initial: { opacity: 0, rotate: -10, scale: 0.9 },
+        animate: { opacity: 1, rotate: 0, scale: 1 }
+    },
+    2: {
+        initial: { opacity: 0, x: 60 },
+        animate: { opacity: 1, x: 0 }
+    },
+};
+
 export default function Portfolio() {
     return (
         <section className="portfolio-section" id="portfolio">
-            <h2>Portfolyo</h2>
+            <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+            >
+                Portfolyo
+            </motion.h2>
+
             <div className="portfolio-grid">
-                {projects.map(({ id, title, description, imageUrl, link }) => (
-                    <div key={id} className="portfolio-card fade-up">
-                        <img src={imageUrl} alt={title} />
-                        <div className="portfolio-info">
-                            <h3>{title}</h3>
-                            <p>{description}</p>
-                            <a
-                                href={link}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="btn-portfolio"
-                            >
-                                Projeye Git
-                            </a>
-                        </div>
-                    </div>
-                ))}
+                {projects.map(({ id, title, description, imageUrl, link }, index) => {
+                    const variant = variants[index % 3];
+                    return (
+                        <motion.div
+                            key={id}
+                            className="portfolio-card"
+                            initial={variant.initial}
+                            whileInView={variant.animate}
+                            viewport={{ once: false, amount: 0.3 }}
+                            transition={{ duration: 0.7, ease: "easeOut", delay: index * 0.25 }}
+                        >
+                            <img src={imageUrl} alt={title} />
+                            <div className="portfolio-info">
+                                <h3>{title}</h3>
+                                <p>{description}</p>
+                                <a
+                                    href={link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="btn-portfolio"
+                                >
+                                    Projeye Git
+                                </a>
+                            </div>
+                        </motion.div>
+                    );
+                })}
             </div>
         </section>
     );

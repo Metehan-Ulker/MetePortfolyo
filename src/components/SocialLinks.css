@@ -1,16 +1,13 @@
 #social {
-    padding: 3rem 2rem;
     background-color: rgba(24, 25, 27, 0.91);
-    padding: 300px;
     border-radius: 12px;
     max-width: 600px;
     margin: 7rem auto;
     box-shadow: 0 0 15px rgba(12, 209, 255, 0.85);
     text-align: center;
 
-
-
 }
+
 
 #social h2 {
     color: #0e8aaa;
@@ -91,4 +88,3 @@
         font-size: 0.95rem;
     }
 }
-

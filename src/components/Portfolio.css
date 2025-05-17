@@ -1,7 +1,7 @@
 .portfolio-section {
     background-color: rgba(24, 25, 27, 0.91);
     color: white;
-    padding: 300px;
+    padding: 250px;
     margin: 0 auto;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .btn-portfolio:hover {
-    background-color: #1f6feb;
+    background-color: #393580;
 }
 
 /* Fade animasyonu */

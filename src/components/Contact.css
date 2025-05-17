@@ -14,7 +14,7 @@
     width: 100%;
     animation: fadeUp 1s ease forwards;
     opacity: 0;
-    background: #161b22;
+    background: #1d222e;
     padding: 2rem 3rem;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(88, 166, 255, 0.5);
@@ -25,7 +25,7 @@
 
 .contact-container h2 {
     font-size: 2.5rem;
-    color: #9894f6;
+    color: #5a55e4;
     text-decoration:underline;
     text-decoration-color: #dcd215;
     margin-bottom: 1.5rem;
@@ -33,6 +33,7 @@
 }
 
 .contact-form label {
+    color: #9894f6;
     display: block;
     margin: 0.8rem 0 0.3rem 0;
     font-weight: 600;
@@ -44,7 +45,7 @@
     width: 100%;
     padding: 0.75rem 1rem;
     border-radius: 8px;
-    border: 1.5px solid #30363d;
+    border: 1.5px solid #f6e206;
     background-color: #0d1117;
     color: white;
     font-size: 1rem;
@@ -55,7 +56,7 @@
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #58a6ff;
+    border-color: #fff758;
     box-shadow: 0 0 8px #58a6ff;
 }
 
@@ -63,8 +64,8 @@
     margin-top: 1.8rem;
     width: 100%;
     padding: 0.8rem 1rem;
-    background-color: #58a6ff;
-    color: white;
+    background-color: #5a0cdd;
+    color: #fdfcfc;
     font-weight: 700;
     font-size: 1.1rem;
     border: none;
@@ -74,7 +75,7 @@
 }
 
 .btn-submit:hover {
-    background-color: #1f6feb;
+    background-color: #4f25df;
 }
 
 @keyframes fadeUp {

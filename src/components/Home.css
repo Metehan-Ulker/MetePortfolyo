@@ -19,29 +19,30 @@
 .greeting {
     font-size: 3rem;
     margin-bottom: 10px;
-    animation: float 4s ease-in-out infinite;
+    /* Framer Motion kullanıldığı için float animasyonuna gerek kalmadı */
+    /* animation: float 4s ease-in-out infinite; */
 }
 
 .highlight {
-    color: #58a6ff;
+    color: #63aaf3;
 }
 
 .title {
     font-size: 2rem;
     margin-bottom: 20px;
-    animation: fadeIn 2s ease-in-out;
+    /* animation: fadeIn 2s ease-in-out; */
 }
 
 .description {
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 30px;
-    animation: float 4s ease-in-out infinite;;
+    /* animation: float 4s ease-in-out infinite; */
 }
 
 .cta-button {
-    background-color: #58a6ff;
-    color: white;
+    background-color: #0d2dae;
+    color: #d3d114;
     padding: 12px 30px;
     border-radius: 30px;
     text-decoration: none;
@@ -50,10 +51,10 @@
 }
 
 .cta-button:hover {
-    background-color: #1f6feb;
+    background-color: #6445a3;
 }
 
-/* Animasyonlar */
+/* (İsteğe bağlı) Animasyonlar eski sistem için, artık Framer Motion ile sağlanıyor */
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
@@ -88,5 +89,4 @@
         font-size: 1rem;
         padding: 10px 0;
     }
-
 }

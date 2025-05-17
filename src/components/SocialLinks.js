@@ -60,13 +60,13 @@ export default function SocialLinks() {
         <section
             id="social"
             style={{
-                padding: '120px',
+                padding: '100px',
                 borderRadius: '12px',
                 textAlign: 'center',
 
             }}
         >
-            <h2 style={{ color: '#6e5fa5', fontSize: '2.4rem', marginBottom: '1rem' ,textDecoration:"underline"}}>
+            <h2 style={{ color: '#6e5fa5', fontSize: '2rem', marginBottom: '2rem' ,}}>
                 Sosyal Medya Bağlantıları
             </h2>
             <ul

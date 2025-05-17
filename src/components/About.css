@@ -49,31 +49,6 @@
     margin-bottom: 1rem;
 }
 
-/* Fade animations */
-.fade-left {
-    opacity: 0;
-    transform: translateX(-50px);
-    animation: fadeLeft 1s forwards;
-}
-.fade-right {
-    opacity: 0;
-    transform: translateX(50px);
-    animation: fadeRight 1s forwards;
-    animation-delay: 0.4s;
-}
-
-@keyframes fadeLeft {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-@keyframes fadeRight {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
 /* Mobile responsive */
 @media (max-width: 768px) {
