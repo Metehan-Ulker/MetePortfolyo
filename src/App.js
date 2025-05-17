@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -22,26 +23,32 @@ const pageTransition = {
     duration: 0.6,
 };
 
-
 export default function App() {
     return (
         <>
             <Navbar />
-            <main style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/arkaplanresim.jpg'})`,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center',
-                minHeight: '100vh' }}>
-                    <Home />
-                    <About />
-                    <Skills />
-                    <Portfolio />
-                    <Contact />
-                    <SocialLinks />
-                    <Footer/>
-
-            </main>
+            <motion.main
+                initial="initial"
+                animate="in"
+                exit="out"
+                variants={pageVariants}
+                transition={pageTransition}
+                style={{
+                    backgroundImage: `url(${process.env.PUBLIC_URL + '/arkaplanresim.jpg'})`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    minHeight: '100vh'
+                }}
+            >
+                <Home />
+                <About />
+                <Skills />
+                <Portfolio />
+                <Contact />
+                <SocialLinks />
+                <Footer />
+            </motion.main>
         </>
     );
 }
-
