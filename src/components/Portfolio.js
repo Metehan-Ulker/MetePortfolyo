@@ -12,17 +12,24 @@ const projects = [
     },
     {
         id: 2,
-        title: "Word Benzeri Uygulama",
-        description: "Python kullanarak tasarladığım Word benzeri uygulama.",
+        title: "Word Tasarım Uygulaması",
+        description: "Python ve QtDesigner kullanarak Word benzeri uygulama tasarladım.",
         imageUrl: "/foto3.jpg",
         link: "https://github.com/Metehan-Ulker/WordUygulamasi"
     },
     {
         id: 3,
         title: "Soru Bankası",
-        description: "Python kullanarak tasarladığım soru bankası uygulaması.",
+        description: "Python ve QtDesigner kullanarak soru bankası uygulaması tasarladım.",
         imageUrl: "/foto2.jpg",
         link: "https://github.com/Metehan-Ulker/SoruBankasi"
+    },
+    {
+        id: 4,
+        title: "Arduino ile Tarım Robotu",
+        description: "Arduino ve Motor sürücüler kullanarak grup halinde tasarladığımız Tarım Robotu.",
+        imageUrl: "/araç.jpeg",
+        link: "https://github.com/Metehan-Ulker/ArduinoTarimRobotu"
     },
 ];
 
